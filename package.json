@@ -1,0 +1,13 @@
+{
+  "name": "student-works",
+  "version": "1.0.0",
+  "scripts": {
+    "dev:server": "nodemon index.js --prefix backend",
+    "dev:client": "npm run start --prefix frontend",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\""
+  },
+  "dependencies": {
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.20"
+  }
+}
